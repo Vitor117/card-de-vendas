@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-family: Fraunces;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .image {
+    width: 50%;
+}
+
+.container .image img {
+    width: 100%;
+    display: block;
+}
+
+.container .image img.mobile{
+    display: none;
+}
+
+.container .card {
+    width: 50%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .card h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    font-family: Montserrat;
+    color: hsl(210, 3%, 16%);
+}
+
+.container .card h1 {
+    color: hsl(210, 3%, 16%);
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.container .card p {
+    font-size: 14px;
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+    margin-bottom: 34px;
+}
+
+.container .card h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    line-height: 32px;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+.container .card h2 span {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.container .card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 48px;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: #1A4031;
+    border-radius: 8px;
+    margin-top: 26px;
+    transition: 200ms;
+}
+
+.container .card a:hover {
+    background-color: hsl(158, 36%, 37%);
+}
+
+@media only screen and ( max-width: 600px ) {
+    body {
+        height: auto;
+        padding: 28px 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .image {
+        width: 100%;
+    }
+
+    .container .image img.desktop {
+        display: none;
+    }
+
+    .container .image img.mobile {
+        display: block;
+    }
+
+    .container .card {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+
